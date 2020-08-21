@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "website" {
-  bucket = "website.norell.dev"
+  bucket = "${var.subdomain}.${data.aws_route53_zone.domain.name}"
   acl    = "public-read"
   versioning {
     enabled = false
