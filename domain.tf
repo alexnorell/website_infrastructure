@@ -1,11 +1,11 @@
 variable "domain_name" {
-    description = "domain name to use from route53"
-    default = "norell.dev"
+  description = "domain name to use from route53"
+  default     = "norell.dev"
 }
 
 variable "subdomain" {
-    description = "subdomain to create record and bucket for"
-    default = "www"
+  description = "subdomain to create record and bucket for"
+  default     = "www"
 }
 
 data "aws_route53_zone" "domain" {
