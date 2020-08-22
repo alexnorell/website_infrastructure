@@ -1,11 +1,9 @@
 variable "domain_name" {
-  description = "domain name to use from route53"
-  default     = "norell.dev"
+  description = "top level domain name to use from Route53. Must be a hosted zone in Route53. example: example.com"
 }
 
 variable "subdomain" {
-  description = "subdomain to create record and bucket for"
-  default     = "www"
+  description = "subdomain to create record and bucket for. example: wwww"
 }
 
 locals {
