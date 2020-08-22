@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "website" {
-  bucket = "${var.subdomain}.${data.aws_route53_zone.domain.name}"
+  bucket = local.full_domain
   acl    = "public-read"
   versioning {
     enabled = false
